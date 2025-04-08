@@ -50,19 +50,19 @@ public class EcommerceCartCheckout {
 		Thread.sleep(1000);
 		driver.findElement(By.id("button-shipping-method")).click();
 		WebDriverWait wait1 = new WebDriverWait(driver,10);
-        wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"collapse-payment-method\"]/div/p[3]/textarea"))).sendKeys("Leave the package at the front door");
+                wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"collapse-payment-method\"]/div/p[3]/textarea"))).sendKeys("Leave the package at the front door");
 		jse.executeScript("window.scrollBy(0,500)");
-        driver.findElement(By.name("agree")).click();
-        driver.findElement(By.id("button-payment-method")).click();
+                driver.findElement(By.name("agree")).click();
+                driver.findElement(By.id("button-payment-method")).click();
 		Thread.sleep(1500);
 		jse.executeScript("window.scrollBy(0,500)");
-        driver.findElement(By.id("button-confirm")).click();
+                driver.findElement(By.id("button-confirm")).click();
 		Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/a")).click();
+                driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/a")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.className("caret")).click();
 		Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[5]/a")).click();
-        driver.quit();
+                driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[2]/ul/li[5]/a")).click();
+                driver.quit();
 	}
 }
