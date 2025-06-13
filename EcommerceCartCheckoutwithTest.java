@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class EcommerceCartCheckout {
+public class EcommerceCartCheckoutwithTest {
 
 	WebDriver driver;
 
