@@ -47,9 +47,8 @@ public class AccountRegistrationwithTest {
 		Thread.sleep(500);
 		driver.findElement(By.xpath("//*[@id=\"column-right\"]/div/a[13]")).click();
 		driver.findElement(By.xpath("//*[@id=\"content\"]/div/div/a")).click();
-	    driver.quit();
+	        driver.quit();
 		System.out.println("Account created successfully");
 	}
-
 }
 
